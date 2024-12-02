@@ -1,6 +1,7 @@
 function isPalindrome(word) {
-  console.log(word);
-  return true;
+  const wordWithoutSpaces = word.toString().replaceAll(" ", "").toUpperCase();
+  const test = wordWithoutSpaces.split("").reverse().join("");
+  return test === wordWithoutSpaces;
 }
 
 module.exports = isPalindrome
